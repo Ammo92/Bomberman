@@ -7,9 +7,19 @@
 //
 
 #include <iostream>
+#include <string>
+#include "Map.hpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+
+
+int main(int argc, char ** argv)
+{
+    Map map;
+  
+    map.Generate(argv);
+    map.Display ();
+    
     return 0;
 }
+
+
